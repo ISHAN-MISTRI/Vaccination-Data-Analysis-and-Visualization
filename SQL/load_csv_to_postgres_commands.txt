@@ -1,0 +1,26 @@
+-- copying the data in tables
+
+COPY vaccination.coverage_data
+FROM 'C:/Program Files/PostgreSQL/17/data/coverage_data.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY vaccination.incidence_rate_data
+FROM 'C:/Program Files/PostgreSQL/17/data/incidence_rate.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY vaccination.reported_cases_data
+FROM 'C:/Program Files/PostgreSQL/17/data/reported_cases.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY vaccination.vaccine_introduction_data
+FROM 'C:/Program Files/PostgreSQL/17/data/vaccine_introduction.csv'
+DELIMITER ','
+CSV HEADER;
+
+COPY vaccination.vaccine_schedule_data
+FROM 'C:/Program Files/PostgreSQL/17/data/vaccine_schedule.csv'
+DELIMITER ','
+CSV HEADER;
